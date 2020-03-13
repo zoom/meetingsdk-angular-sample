@@ -70,7 +70,7 @@ To get started, clone the repo:
 
 ## Deployment
 
-The Angular Sample App can be easily deployed to [GitHub Pages](gitHub-pages), or [another static web hosting service](other-static-web-hosting), like an AWS S3 bucket.
+The Angular Sample App can be easily deployed to [GitHub Pages](#github-pages), or [another static web hosting service](#other-static-web-hosting), like an AWS S3 bucket.
 
 ### GitHub Pages
 
