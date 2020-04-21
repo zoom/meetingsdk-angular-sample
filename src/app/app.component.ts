@@ -14,7 +14,7 @@ ZoomMtg.prepareJssdk();
 })
 export class AppComponent implements OnInit {
 
-  // setup your signautre endpoint here: https://github.com/zoom/websdk-sample-signature-node.js
+  // setup your signature endpoint here: https://github.com/zoom/websdk-sample-signature-node.js
   signatureEndpoint = ''
   apiKey = ''
   meetingNumber = 123456789
