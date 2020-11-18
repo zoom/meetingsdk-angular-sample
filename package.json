@@ -1,6 +1,6 @@
 {
   "name": "websdk-sample-angular",
-  "version": "1.8.1",
+  "version": "1.8.3",
   "author": "Tommy Gaessler",
   "scripts": {
     "ng": "ng",
@@ -20,18 +20,18 @@
     "@angular/platform-browser": "~10.1.2",
     "@angular/platform-browser-dynamic": "~10.1.2",
     "@angular/router": "~10.1.2",
-    "@zoomus/websdk": "^1.8.1",
+    "@zoomus/websdk": "^1.8.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1001.2",
+    "@angular-devkit/build-angular": "^0.1100.1",
     "@angular/cli": "~10.1.2",
     "@angular/compiler-cli": "~10.1.2",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
