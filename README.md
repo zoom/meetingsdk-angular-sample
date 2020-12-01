@@ -38,7 +38,7 @@ To get started, clone the repo:
    ```js
    signatureEndpoint = 'http://localhost:4000'
    apiKey = 'xu3asdfaJPaA_RJW2-9l5_HAaLA'
-   meetingNumber = 123456789
+   meetingNumber = '123456789'
    role = 0
    leaveUrl = 'http://localhost:4200'
    userName = 'Angular'

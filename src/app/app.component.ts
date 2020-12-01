@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   // setup your signature endpoint here: https://github.com/zoom/websdk-sample-signature-node.js
   signatureEndpoint = ''
   apiKey = ''
-  meetingNumber = 123456789
+  meetingNumber = '123456789'
   role = 0
   leaveUrl = 'http://localhost:4200'
   userName = 'Angular'
