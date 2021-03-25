@@ -80,7 +80,7 @@ The Angular Sample App can be easily deployed to [GitHub Pages](#github-pages), 
 
    `$ git remote add origin GITHUB_URL/GITHUB_USERNAME/GITHUB_REPO_NAME.git`
 
-1. Open the `angular.json` file and on line 48 replace `/` with your GitHub repo name surrounded by slashes like this: `/GITHUB_REPO_NAME/`.
+1. Open the `angular.json` file and replace the value for `"baseHref"` with your GitHub repo name surrounded by slashes like this: `/GITHUB_REPO_NAME/`. Example: `"baseHref": "/GITHUB_REPO_NAME/"`
 
 1. Build your project:
 
