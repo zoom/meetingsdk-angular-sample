@@ -22,13 +22,12 @@
     "@angular/router": "~11.0.4",
     "@zoomus/websdk": "^1.9.1",
     "rxjs": "~6.6.0",
-    "ssri": ">=8.0.1",
     "tslib": "^2.0.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1100.4",
-    "@angular/cli": "~11.0.4",
+    "@angular-devkit/build-angular": "^0.1102.12",
+    "@angular/cli": "^11.2.12",
     "@angular/compiler-cli": "~11.0.4",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
@@ -36,7 +35,7 @@
     "codelyzer": "^6.0.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.1.1",
+    "karma": "^6.3.2",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
@@ -44,7 +43,6 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "^4.0.5",
-    "xmlhttprequest-ssl": ">=1.6.2"
+    "typescript": "^4.0.5"
   }
 }
