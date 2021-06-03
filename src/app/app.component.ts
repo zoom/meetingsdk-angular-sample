@@ -57,7 +57,8 @@ export class AppComponent implements OnInit {
       isSupportAV: true,
       success: (success) => {
         console.log(success)
-
+        ZoomMtg.i18n.load('en-US');
+        ZoomMtg.i18n.reload('en-US');
         ZoomMtg.join({
           signature: signature,
           meetingNumber: this.meetingNumber,
