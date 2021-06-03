@@ -6,6 +6,9 @@ import { ZoomMtg } from '@zoomus/websdk';
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareJssdk();
+// loads language files, also passes any error messages to the ui
+ZoomMtg.i18n.load('en-US');
+ZoomMtg.i18n.reload('en-US');
 
 @Component({
   selector: 'app-root',
@@ -57,8 +60,6 @@ export class AppComponent implements OnInit {
       isSupportAV: true,
       success: (success) => {
         console.log(success)
-        ZoomMtg.i18n.load('en-US');
-        ZoomMtg.i18n.reload('en-US');
         ZoomMtg.join({
           signature: signature,
           meetingNumber: this.meetingNumber,
