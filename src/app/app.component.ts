@@ -5,7 +5,7 @@ import { DOCUMENT } from '@angular/common';
 import { ZoomMtg } from '@zoomus/websdk';
 
 ZoomMtg.preLoadWasm();
-ZoomMtg.prepareJssdk();
+ZoomMtg.prepareWebSDK();
 // loads language files, also passes any error messages to the ui
 ZoomMtg.i18n.load('en-US');
 ZoomMtg.i18n.reload('en-US');
@@ -26,6 +26,10 @@ export class AppComponent implements OnInit {
   userName = 'Angular'
   userEmail = ''
   passWord = ''
+  // pass in the registrant's token if your meeting or webinar requires registration. More info here:
+  // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/build/meetings/join#join-registered
+  // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/build/webinars/join#join-registered-webinar
+  registrantToken = ''
 
   constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document) {
 
@@ -57,7 +61,6 @@ export class AppComponent implements OnInit {
 
     ZoomMtg.init({
       leaveUrl: this.leaveUrl,
-      isSupportAV: true,
       success: (success) => {
         console.log(success)
         ZoomMtg.join({
@@ -67,6 +70,7 @@ export class AppComponent implements OnInit {
           apiKey: this.apiKey,
           userEmail: this.userEmail,
           passWord: this.passWord,
+          tk: this.registrantToken,
           success: (success) => {
             console.log(success)
           },
