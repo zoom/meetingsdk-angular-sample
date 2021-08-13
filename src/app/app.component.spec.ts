@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'websdk-sample-angular'`, () => {
+  it(`should have as title 'meetingsdk-sample-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('websdk-sample-angular');
+    expect(app.title).toEqual('meetingsdk-sample-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('websdk-sample-angular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('meetingsdk-sample-angular app is running!');
   });
 });

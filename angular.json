@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "websdk-sample-angular": {
+    "meetingsdk-sample-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "websdk-sample-angular:build"
+            "browserTarget": "meetingsdk-sample-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "websdk-sample-angular:build:production"
+              "browserTarget": "meetingsdk-sample-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "websdk-sample-angular:build"
+            "browserTarget": "meetingsdk-sample-angular:build"
           }
         },
         "test": {
@@ -121,15 +121,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "websdk-sample-angular:serve"
+            "devServerTarget": "meetingsdk-sample-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "websdk-sample-angular:serve:production"
+              "devServerTarget": "meetingsdk-sample-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "websdk-sample-angular"
+  "defaultProject": "meetingsdk-sample-angular"
 }
