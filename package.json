@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-sample-angular",
-  "version": "1.9.7",
+  "version": "1.9.8",
   "author": "Tommy Gaessler",
   "scripts": {
     "ng": "ng",
@@ -12,23 +12,23 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~11.2.13",
-    "@angular/common": "~11.2.13",
-    "@angular/compiler": "~11.2.13",
-    "@angular/core": "~11.2.13",
-    "@angular/forms": "~11.2.13",
-    "@angular/platform-browser": "~11.2.13",
-    "@angular/platform-browser-dynamic": "~11.2.13",
-    "@angular/router": "~11.2.13",
-    "@zoomus/websdk": "^1.9.7",
+    "@angular/animations": "~12.2.2",
+    "@angular/common": "~12.2.2",
+    "@angular/compiler": "~12.2.2",
+    "@angular/core": "~12.2.2",
+    "@angular/forms": "~12.2.2",
+    "@angular/platform-browser": "~12.2.2",
+    "@angular/platform-browser-dynamic": "~12.2.2",
+    "@angular/router": "~12.2.2",
+    "@zoomus/websdk": "^1.9.8",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.3",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1102.12",
-    "@angular/cli": "^11.2.12",
-    "@angular/compiler-cli": "~11.2.13",
+    "@angular-devkit/build-angular": "^12.2.2",
+    "@angular/cli": "^12.2.2",
+    "@angular/compiler-cli": "~12.2.2",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.19.9",
@@ -43,6 +43,6 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.3.5"
   }
 }
