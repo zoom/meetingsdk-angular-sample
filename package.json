@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-sample-angular",
-  "version": "1.9.8",
+  "version": "1.9.9",
   "author": "Tommy Gaessler",
   "scripts": {
     "ng": "ng",
@@ -20,7 +20,7 @@
     "@angular/platform-browser": "~12.2.2",
     "@angular/platform-browser-dynamic": "~12.2.2",
     "@angular/router": "~12.2.2",
-    "@zoomus/websdk": "^1.9.8",
+    "@zoomus/websdk": "^1.9.9",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.3",
     "zone.js": "~0.11.4"

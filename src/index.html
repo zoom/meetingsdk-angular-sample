@@ -6,6 +6,13 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Origin Trials to improve SDK performance on Chrome -->
+  <!-- More Info: https://marketplace.zoom.us/docs/sdk/native-sdks/web/advanced/web-isolation -->
+  <!-- SharedArrayBuffers in non-isolated pages on Desktop platforms -->
+  <meta http-equiv="origin-trial" content="">
+  <!-- WebAssembly SIMD -->
+  <meta http-equiv="origin-trial" content="">
 </head>
 <body>
   <app-root></app-root>
