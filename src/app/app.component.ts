@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
   userEmail = ''
   passWord = ''
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
-  // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/build/meetings/join#join-registered
-  // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/build/webinars/join#join-registered-webinar
+  // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
+  // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
   registrantToken = ''
 
   constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document) {
