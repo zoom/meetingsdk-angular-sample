@@ -21,12 +21,7 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              {
-                "glob": "**/*",
-                "input": "./node_modules/@zoomus/websdk/dist/lib/",
-                "output": "./node_modules/@zoomus/websdk/dist/lib/"
-              }
+              "src/assets"
             ],
             "styles": [
               "node_modules/@zoomus/websdk/dist/css/bootstrap.css",
@@ -36,7 +31,6 @@
             "scripts": [
             ],
             "allowedCommonJsDependencies": [
-              "@zoomus/websdk"
             ]
           },
           "configurations": {
@@ -58,8 +52,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "5mb",
-                  "maximumError": "6mb"
+                  "maximumWarning": "6mb",
+                  "maximumError": "7mb"
                 },
                 {
                   "type": "anyComponentStyle",
