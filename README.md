@@ -62,11 +62,11 @@ To get started, clone the repo:
 
 1. Navigate to http://localhost:4200.
 
-   ![Zoom Angular Meeting SDK](https://camo.githubusercontent.com/2302ae1a124c5ba0b780f76477f02da7169bbe7d3928d8579f8b9e6e12919ff6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f757365722d636f6e74656e742e73746f706c696768742e696f2f31393830382f31353833373839303537393239)
+   ![Zoom Angular Meeting SDK](https://marketplace.zoom.us/docs/images/migrated/1583789057929.png)
 
 1. Click "Join Meeting" to join the meeting number specified in `src/app/app.component.ts`.
 
-   ![Zoom Angular Meeting SDK](https://camo.githubusercontent.com/a5fc99286795a8393d62358e35737bc5ab51d50463b230d7a552677017e8fdc3/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f757365722d636f6e74656e742e73746f706c696768742e696f2f31393830382f31353833373839303639323138)
+   ![Zoom Angular Meeting SDK](https://marketplace.zoom.us/docs/images/migrated/1583789069218.png)
 
 ## Deployment
 
