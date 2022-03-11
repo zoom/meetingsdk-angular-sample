@@ -4,7 +4,7 @@ import { DOCUMENT } from '@angular/common';
 
 import { ZoomMtg } from '@zoomus/websdk';
 
-ZoomMtg.setZoomJSLib('https://source.zoom.us/2.2.0/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.3.0/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
@@ -21,7 +21,8 @@ export class AppComponent implements OnInit {
 
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
   signatureEndpoint = ''
-  apiKey = ''
+  // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
+  sdkKey = ''
   meetingNumber = '123456789'
   role = 0
   leaveUrl = 'http://localhost:4200'
@@ -69,7 +70,7 @@ export class AppComponent implements OnInit {
           signature: signature,
           meetingNumber: this.meetingNumber,
           userName: this.userName,
-          apiKey: this.apiKey,
+          sdkKey: this.sdkKey,
           userEmail: this.userEmail,
           passWord: this.passWord,
           tk: this.registrantToken,

@@ -13,7 +13,8 @@ export class AppComponent implements OnInit {
 
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
   signatureEndpoint = ''
-  apiKey = ''
+  // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
+  sdkKey = ''
   meetingNumber = '123456789'
   role = 0
   userName = 'Angular'
@@ -73,7 +74,7 @@ export class AppComponent implements OnInit {
   startMeeting(signature) {
 
     this.client.join({
-    	apiKey: this.apiKey,
+    	sdkKey: this.sdkKey,
     	signature: signature,
     	meetingNumber: this.meetingNumber,
     	password: this.passWord,
