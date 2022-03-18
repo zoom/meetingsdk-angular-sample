@@ -18,6 +18,8 @@ To get started, clone the repo:
 
 `$ git clone https://github.com/zoom/meetingsdk-sample-angular.git`
 
+> To setup and run the app you will need the [Angular CLI](https://cli.angular.io).
+
 ## Setup
 
 1. Once cloned, navigate to the `meetingsdk-sample-angular` directory:
