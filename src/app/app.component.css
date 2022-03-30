@@ -15,6 +15,9 @@ button {
   padding-right: 40px;
   display: inline-block;
   border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 button:hover {
