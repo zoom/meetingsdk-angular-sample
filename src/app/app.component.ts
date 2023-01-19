@@ -4,7 +4,7 @@ import { DOCUMENT } from '@angular/common';
 
 import { ZoomMtg } from '@zoomus/websdk';
 
-ZoomMtg.setZoomJSLib('https://source.zoom.us/2.9.5/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.9.7/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
