@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-sample-angular",
-  "version": "2.10.1",
+  "version": "2.11.0",
   "author": "Zoom Video Communications, Inc.",
   "contributors": [
     {
@@ -25,7 +25,7 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
-    "@zoomus/websdk": "^2.10.1",
+    "@zoomus/websdk": "^2.11.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.3",
     "zone.js": "~0.11.4"
