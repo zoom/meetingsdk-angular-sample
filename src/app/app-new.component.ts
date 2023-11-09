@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, NgZone } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DOCUMENT } from '@angular/common';
 
@@ -23,32 +23,12 @@ export class AppComponent implements OnInit {
 
   client = ZoomMtgEmbedded.createClient();
 
-  constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document) {
+  constructor(public httpClient: HttpClient, @Inject(DOCUMENT) document, private ngZone: NgZone) {
 
   }
 
   ngOnInit() {
-    let meetingSDKElement = document.getElementById('meetingSDKElement');
-
-    this.client.init({
-      debug: true,
-      zoomAppRoot: meetingSDKElement,
-      language: 'en-US',
-      customize: {
-        meetingInfo: ['topic', 'host', 'mn', 'pwd', 'telPwd', 'invite', 'participant', 'dc', 'enctype'],
-        toolbar: {
-          buttons: [
-            {
-              text: 'Custom Button',
-              className: 'CustomButton',
-              onClick: () => {
-                console.log('custom button');
-              }
-            }
-          ]
-        }
-      }
-    });
+    
   }
 
   getSignature() {
@@ -69,15 +49,27 @@ export class AppComponent implements OnInit {
 
   startMeeting(signature) {
 
-    this.client.join({
-      signature: signature,
-    	sdkKey: this.sdkKey,
-    	meetingNumber: this.meetingNumber,
-    	password: this.passWord,
-    	userName: this.userName,
-      userEmail: this.userEmail,
-      tk: this.registrantToken,
-      zak: this.zakToken
+    let meetingSDKElement = document.getElementById('meetingSDKElement');
+
+    this.ngZone.runOutsideAngular(() => {
+      this.client.init({zoomAppRoot: meetingSDKElement, language: 'en-US'}).then(() => {
+        this.client.join({
+          signature: signature,
+          sdkKey: this.sdkKey,
+          meetingNumber: this.meetingNumber,
+          password: this.passWord,
+          userName: this.userName,
+          userEmail: this.userEmail,
+          tk: this.registrantToken,
+          zak: this.zakToken
+        }).then(() => {
+          console.log('joined succesfully')
+        }).catch((error) => {
+          console.log(error)
+        })
+      }).catch((error) => {
+        console.log(error)
+      })
     })
   }
 }
