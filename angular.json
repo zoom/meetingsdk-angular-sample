@@ -24,8 +24,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/@zoomus/websdk/dist/css/bootstrap.css",
-              "node_modules/@zoomus/websdk/dist/css/react-select.css",
               "src/styles.css"
             ],
             "scripts": [

@@ -2,7 +2,7 @@ import { Component, OnInit, Inject, NgZone } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DOCUMENT } from '@angular/common';
 
-import ZoomMtgEmbedded from '@zoomus/websdk/embedded';
+import ZoomMtgEmbedded from '@zoom/meetingsdk/embedded';
 
 @Component({
   selector: 'app-root',
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
     let meetingSDKElement = document.getElementById('meetingSDKElement');
 
     this.ngZone.runOutsideAngular(() => {
-      this.client.init({zoomAppRoot: meetingSDKElement, language: 'en-US'}).then(() => {
+      this.client.init({zoomAppRoot: meetingSDKElement, language: 'en-US', patchJsMedia: true}).then(() => {
         this.client.join({
           signature: signature,
           sdkKey: this.sdkKey,
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
           tk: this.registrantToken,
           zak: this.zakToken
         }).then(() => {
-          console.log('joined succesfully')
+          console.log('joined successfully')
         }).catch((error) => {
           console.log(error)
         })
