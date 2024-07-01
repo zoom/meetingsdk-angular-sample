@@ -37,15 +37,13 @@ export class AppComponent implements OnInit {
     this.httpClient.post(this.authEndpoint, {
 	    meetingNumber: this.meetingNumber,
 	    role: this.role
-    }).toPromise().then((data: any) => {
+    }).subscribe((data: any) => {
       if(data.signature) {
         console.log(data.signature)
         this.startMeeting(data.signature)
       } else {
         console.log(data)
       }
-    }).catch((error) => {
-      console.log(error)
     })
   }
 
