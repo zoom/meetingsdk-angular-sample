@@ -9,6 +9,7 @@
     "src/main.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/zone-flags.ts"
   ]
 }
