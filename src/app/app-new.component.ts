@@ -34,7 +34,8 @@ export class AppComponent implements OnInit {
   getSignature() {
     this.httpClient.post(this.authEndpoint, {
 	    meetingNumber: this.meetingNumber,
-	    role: this.role
+	    role: this.role,
+      videoWebRtcMode: 1,
     }).toPromise().then((data: any) => {
       if(data.signature) {
         console.log(data.signature)
