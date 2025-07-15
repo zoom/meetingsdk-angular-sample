@@ -1,6 +1,6 @@
 {
   "name": "meetingsdk-angular-sample",
-  "version": "3.13.1",
+  "version": "4.0.0",
   "author": "Zoom Video Communications, Inc.",
   "contributors": [
     {
@@ -24,10 +24,10 @@
     "@angular/platform-browser": "^19.1.5",
     "@angular/platform-browser-dynamic": "^19.1.5",
     "@angular/router": "^19.1.5",
-    "@zoom/meetingsdk": "^3.13.1",
-    "rxjs": "~7.8.0",
+    "@zoom/meetingsdk": "^4.0.0",
+    "rxjs": "^7.8.2",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "^0.15.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.6",
@@ -40,6 +40,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.4"
+    "typescript": "^5.8.3"
   }
 }

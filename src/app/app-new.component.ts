@@ -13,7 +13,6 @@ import ZoomMtgEmbedded from '@zoom/meetingsdk/embedded';
 export class AppComponent implements OnInit {
 
   authEndpoint = ''
-  sdkKey = ''
   meetingNumber = '123456789'
   passWord = ''
   role = 0
@@ -35,7 +34,8 @@ export class AppComponent implements OnInit {
   getSignature() {
     this.httpClient.post(this.authEndpoint, {
 	    meetingNumber: this.meetingNumber,
-	    role: this.role
+	    role: this.role,
+      videoWebRtcMode: 1,
     }).toPromise().then((data: any) => {
       if(data.signature) {
         console.log(data.signature)
@@ -56,7 +56,6 @@ export class AppComponent implements OnInit {
       this.client.init({zoomAppRoot: meetingSDKElement, language: 'en-US', patchJsMedia: true, leaveOnPageUnload: true}).then(() => {
         this.client.join({
           signature: signature,
-          sdkKey: this.sdkKey,
           meetingNumber: this.meetingNumber,
           password: this.passWord,
           userName: this.userName,
