@@ -33,7 +33,6 @@ To get started, clone the repo:
    | Variable                   | Description |
    | -----------------------|-------------|
    | authEndpoint          | Required, your Meeting SDK auth endpoint that securely generates a Meeting SDK JWT. [Get a Meeting SDK auth endpoint here.](https://github.com/zoom/meetingsdk-sample-signature-node.js) |
-   [You can get yours here](https://developers.zoom.us/docs/meeting-sdk/developer-accounts/#get-meeting-sdk-credentials). |
    | meetingNumber                   | Required, the Zoom Meeting or webinar number. |
    | passWord                   | Optional, meeting password. Leave as empty string if the meeting does not require a password. |
    | role                   | Required, `0` to specify participant, `1` to specify host. |
