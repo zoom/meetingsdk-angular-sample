@@ -16,7 +16,6 @@ ZoomMtg.prepareWebSDK();
 export class AppComponent implements OnInit {
 
   authEndpoint = ''
-  sdkKey = ''
   meetingNumber = '123456789'
   passWord = ''
   role = 0
@@ -37,7 +36,8 @@ export class AppComponent implements OnInit {
   getSignature() {
     this.httpClient.post(this.authEndpoint, {
 	    meetingNumber: this.meetingNumber,
-	    role: this.role
+	    role: this.role,
+      videoWebRtcMode: 1
     }).subscribe((data: any) => {
       if(data.signature) {
         console.log(data.signature)
@@ -61,7 +61,6 @@ export class AppComponent implements OnInit {
           console.log(success)
           ZoomMtg.join({
             signature: signature,
-            sdkKey: this.sdkKey,
             meetingNumber: this.meetingNumber,
             passWord: this.passWord,
             userName: this.userName,
